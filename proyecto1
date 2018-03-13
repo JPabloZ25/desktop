@@ -1,0 +1,19 @@
+
+#include "stdafx.h"
+#include <iostream>
+
+
+#define SUM(a, b) ((a) + (b)) 
+#define MAL(a, b) a + b
+
+int f() {
+	return 2;
+}
+int main()
+{
+	int x = 3;
+	int s = SUM(x, f() + 1) * 2;
+	int m = MAL(x, f() + 1) * 2;
+	printf("La macro con paréntesis es igual a: %d \nLa macro sin paréntesis es igual a: %d\n\n", s, m);
+	system("Pause");
+}
